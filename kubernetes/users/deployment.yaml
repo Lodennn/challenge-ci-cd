@@ -27,5 +27,5 @@ spec:
             - name: MONGO_DB_HOST
               value: cluster0.bzovdv3.mongodb.net
             - name: AUTH_API_ADDRESS
-              value: auth:3000
+              value: auth-service.smartauthns:3000
       restartPolicy: Always
