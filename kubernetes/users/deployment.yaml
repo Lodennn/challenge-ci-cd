@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: users-deployment
+spec:
+  selector:
+    matchLabels:
+      app: users-pod
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: users-pod
+    spec:
+      containers:
+        - name: users-container
+          image: lodenn/users-api:latest
+          env:
+            - name: TOKEN_KEY
+              value: secrettoken!
+            - name: MONGO_INITDB_DATABASE
+              value: users
+            - name: MONGO_INITDB_ROOT_USERNAME
+              value: admin
+            - name: MONGO_INITDB_ROOT_PASSWORD
+              value: secret
+            - name: MONGO_DB_HOST
+              value: mongodb
+            - name: AUTH_API_ADDRESS
+              value: auth:3000
+      restartPolicy: Always
