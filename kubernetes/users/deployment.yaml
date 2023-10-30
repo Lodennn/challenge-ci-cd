@@ -21,11 +21,11 @@ spec:
             - name: MONGO_INITDB_DATABASE
               value: users
             - name: MONGO_INITDB_ROOT_USERNAME
-              value: admin
+              value: Admin
             - name: MONGO_INITDB_ROOT_PASSWORD
-              value: secret
+              value: v4fFNKRLNF9TN5mL
             - name: MONGO_DB_HOST
-              value: mongodb
+              value: cluster0.bzovdv3.mongodb.net
             - name: AUTH_API_ADDRESS
               value: auth:3000
       restartPolicy: Always
