@@ -23,7 +23,7 @@ spec:
             - name: MONGO_INITDB_ROOT_USERNAME
               value: Admin
             - name: MONGO_INITDB_ROOT_PASSWORD
-              value: v4fFNKRLNF9TN5mL
+              value: mJPdD57enYZm4aRl
             - name: MONGO_DB_HOST
               value: cluster0.bzovdv3.mongodb.net
             - name: AUTH_API_ADDRESS
