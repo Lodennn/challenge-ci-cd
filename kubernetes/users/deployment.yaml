@@ -23,9 +23,9 @@ spec:
             - name: MONGO_INITDB_ROOT_USERNAME
               value: Admin
             - name: MONGO_INITDB_ROOT_PASSWORD
-              value: mJPdD57enYZm4aRl
+              value: DIf4CMoPGnz49cCi
             - name: MONGO_DB_HOST
-              value: cluster0.bzovdv3.mongodb.net
+              value: cluster0.n0mzg46.mongodb.net
             - name: AUTH_API_ADDRESS
               value: auth-service.smartauthns:3000
       restartPolicy: Always
