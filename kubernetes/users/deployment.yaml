@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: users-container
-          image: lodenn/users-api:8364635e2a9a164de1bb649db9fd617bcad6c3a2
+          image: lodenn/users-api:b3bffac76f72e42efeeb0d47523f7adbe5d423ec
           env:
             - name: TOKEN_KEY
               value: secrettoken!
