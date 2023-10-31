@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tasks-deployment
+spec:
+  selector:
+    matchLabels:
+      app: tasks-pod
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: tasks-pod
+    spec:
+      containers:
+        - name: tasks-container
+          image: lodenn/tasks-api:latest
+          env:
+            - name: TOKEN_KEY
+              value: secrettoken!
+            - name: MONGO_INITDB_DATABASE
+              value: users
+            - name: MONGO_INITDB_ROOT_USERNAME
+              value: Admin
+            - name: MONGO_INITDB_ROOT_PASSWORD
+              value: DIf4CMoPGnz49cCi
+            - name: MONGO_DB_HOST
+              value: cluster0.fmirxs9.mongodb.net
+            - name: AUTH_API_ADDRESS
+              value: auth-service.smartauthns:3000
+      restartPolicy: Always
