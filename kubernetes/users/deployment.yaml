@@ -16,16 +16,29 @@ spec:
         - name: users-container
           image: lodenn/users-api:f8bcbd4c7e208e41175b64ed4552b76b53f6aee6
           env:
-            - name: TOKEN_KEY
-              value: secrettoken
             - name: MONGO_INITDB_DATABASE
-              value: users
+              valueFrom:
+                configMapKeyRef:
+                  name: environment
+                  key: MONGO_INITDB_DATABASE
             - name: MONGO_INITDB_ROOT_USERNAME
-              value: Admin
+              valueFrom:
+                configMapKeyRef:
+                  name: environment
+                  key: MONGO_INITDB_ROOT_USERNAME
             - name: MONGO_INITDB_ROOT_PASSWORD
-              value: DIf4CMoPGnz49cCi
+              valueFrom:
+                configMapKeyRef:
+                  name: environment
+                  key: MONGO_INITDB_ROOT_PASSWORD
             - name: MONGO_DB_HOST
-              value: cluster0.4ilq27g.mongodb.net
+              valueFrom:
+                configMapKeyRef:
+                  name: environment
+                  key: MONGO_DB_HOST
             - name: AUTH_API_ADDRESS
-              value: auth-service.smartauthns:3000
+              valueFrom:
+                configMapKeyRef:
+                  name: environment
+                  key: AUTH_API_ADDRESS
       restartPolicy: Always
