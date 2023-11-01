@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: environment
+data:
+  TOKEN_KEY: secrettoken
+  MONGO_INITDB_DATABASE: users
+  MONGO_INITDB_ROOT_USERNAME: Admin
+  MONGO_INITDB_ROOT_PASSWORD: DIf4CMoPGnz49cCi
+  MONGO_DB_HOST: cluster0.4ilq27g.mongodb.net
+  AUTH_API_ADDRESS: auth-service.smartauthns:3000
