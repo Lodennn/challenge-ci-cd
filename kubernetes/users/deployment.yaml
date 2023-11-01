@@ -41,4 +41,11 @@ spec:
                 configMapKeyRef:
                   name: environment
                   key: AUTH_API_ADDRESS
+          volumeMounts:
+            - mountPath: /app/users
+              name: logs
       restartPolicy: Always
+      volumes:
+        - name: logs
+          persistentVolumeClaim:
+            claimName: users-storage-claimer
