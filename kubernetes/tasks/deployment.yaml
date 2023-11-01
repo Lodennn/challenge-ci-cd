@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: tasks-container
-          image: lodenn/tasks-api:df893b65c25b1f5b68202f5eb87508a51db6ce26
+          image: lodenn/tasks-api:064fffcbe975c91094a76e1f79dffa02a6561f39
           env:
             - name: MONGO_INITDB_DATABASE
               value: users
