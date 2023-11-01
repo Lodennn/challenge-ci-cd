@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: users-container
-          image: lodenn/users-api:f8bcbd4c7e208e41175b64ed4552b76b53f6aee6
+          image: lodenn/users-api:df41d64b288c823638561ca7b5000a9a34961741
           env:
             - name: MONGO_INITDB_DATABASE
               valueFrom:
