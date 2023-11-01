@@ -17,7 +17,7 @@ spec:
           image: lodenn/tasks-api:8f80b624701a863c8a177a8e16c7e8997b278bda
           env:
             - name: TOKEN_KEY
-              value: secrettoken!
+              value: secrettoken
             - name: MONGO_INITDB_DATABASE
               value: users
             - name: MONGO_INITDB_ROOT_USERNAME

@@ -17,5 +17,5 @@ spec:
           image: lodenn/auth-api:713e318d7e1c1cf99bfc870bb56695cddaf29614
           env:
             - name: TOKEN_KEY
-              value: secrettoken!
+              value: secrettoken
       restartPolicy: Always
