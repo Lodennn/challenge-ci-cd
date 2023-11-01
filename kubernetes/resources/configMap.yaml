@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: environment
-  namespace: envns
+  namespace: resources
 data:
   TOKEN_KEY: secrettoken
   MONGO_INITDB_DATABASE: users
