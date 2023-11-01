@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: auth-container
-          image: lodenn/auth-api:c5ce059639ca16063bedf05b9929f3b154dc0879
+          image: lodenn/auth-api:e1e0b8a7ac70fac0492c8f1eec9b93fd793ca4d9
           env:
             - name: TOKEN_KEY
               value: secrettoken!
