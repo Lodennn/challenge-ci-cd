@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: tasks-container
-          image: lodenn/tasks-api:8f80b624701a863c8a177a8e16c7e8997b278bda
+          image: lodenn/tasks-api:58280c019f41cfa188564c09b0131550357e876f
           env:
             - name: TOKEN_KEY
               value: secrettoken
