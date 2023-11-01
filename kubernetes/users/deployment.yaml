@@ -25,7 +25,7 @@ spec:
             - name: MONGO_INITDB_ROOT_PASSWORD
               value: DIf4CMoPGnz49cCi
             - name: MONGO_DB_HOST
-              value: cluster0.fmirxs9.mongodb.net
+              value: cluster0.cafimcd.mongodb.net
             - name: AUTH_API_ADDRESS
               value: auth-service.smartauthns:3000
       restartPolicy: Always

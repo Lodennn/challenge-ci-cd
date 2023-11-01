@@ -6,5 +6,5 @@ data:
   MONGO_INITDB_DATABASE: users
   MONGO_INITDB_ROOT_USERNAME: Admin
   MONGO_INITDB_ROOT_PASSWORD: v4fFNKRLNF9TN5mL
-  MONGO_DB_HOST: cluster0.bzovdv3.mongodb.net
+  MONGO_DB_HOST: cluster0.cafimcd.mongodb.net
   AUTH_API_ADDRESS: auth-service.smartauthns:3000
